@@ -1,17 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   box-sizing: border-box;
 }
 
-html {
+html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: radial-gradient(circle at top left, #181023, #0b0519);
   color: #c3b3d8;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  overflow: hidden;
+  background: #0b0519;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: -1;
+
+  background: url("assets/bg-purple4k.png") no-repeat center;
+  background-size: cover;
+
+  animation: cinematicDrift 14s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes cinematicDrift {
+  0% {
+    transform: scale(1.08) translate(-30px, -20px);
+  }
+  100% {
+    transform: scale(1.12) translate(40px, 30px);
+  }
 }

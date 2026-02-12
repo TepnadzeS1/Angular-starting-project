@@ -5,6 +5,9 @@ main {
   display: grid;
   grid-auto-flow: row;
   gap: 2rem;
+  background-color: rgba(145, 43, 240, 0.249);
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 #users {
