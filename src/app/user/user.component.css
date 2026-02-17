@@ -24,6 +24,7 @@ button:active,
 .active {
   background-color: #9965dd;
   color: #150722;
+  transition-duration: 0.2s;
 }
 
 img {
