@@ -9,8 +9,8 @@ header {
   text-align: center;
   background: linear-gradient(
     to bottom,
-    #2c0a4c,
-    #450d80
+    #310a55c9,
+    #450d80a0
   );
   padding: 1rem;
   border-bottom-right-radius: 12px;
@@ -38,10 +38,21 @@ p {
 @media (min-width: 768px) {
   header {
     padding: 2rem;
+    transition-duration: 1s;
+  }
+
+  header:hover {
+    padding: 90px;
+  }
+
+  header:hover img {
+    width: 150px;
+    transition-duration: 1s;
   }
 
   img {
     width: 4.5rem;
+    transition-duration: 1s;
   }
 
   h1 {
